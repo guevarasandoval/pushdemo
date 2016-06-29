@@ -1,0 +1,535 @@
+@import url(//fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400);
+
+#inputs-height, #page-heading-margin-top, #remaining-height {
+  position: absolute;
+  top: 50px;
+  left: 10px;
+}
+
+#page-heading-margin-top {
+  top: 70px;
+}
+
+#remaining-height {
+  top: 90px;
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 200;
+  color: white;
+  background: -o-linear-gradient(right, #2193b0, #6dd5ed  ); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, #2193b0, #6dd5ed  ); /* For Firefox 3.6 to 15 */
+  background: -webkit-linear-gradient(top left, #2193b0, #6dd5ed);
+  background: linear-gradient(to right, #2193b0, #6dd5ed);
+  height: 100vh;
+}
+
+input.create-notification {
+  background: transparent !important;
+  border: none;
+  font-size: 28px !important;
+  height: 52px;
+  line-height: 52px;
+  box-shadow: none;
+  width: 318px;
+  vertical-align: middle;
+  color: white;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 0;
+  letter-spacing: 0.075rem;
+  margin-right: 30px;
+  position: relative;
+  z-index: 1;
+}
+
+input.create-notification:hover, input.create-notification:focus {
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: none;
+}
+
+input.create-notification:focus {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+input.create-notification::-webkit-input-placeholder {
+  color: white;
+  font-weight: 200;
+  opacity: 0.6;
+  -webkit-transition: opacity 0.2s ease-in-out;
+  -moz-transition: opacity 0.2s ease-in-out;
+  -o-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
+}
+
+input.create-notification:focus::-webkit-input-placeholder{
+  opacity: 1;
+}
+
+header.navbar {
+  background: transparent;
+  height: 50px;
+  color: white;
+}
+
+.inputs {
+  text-align: center;
+  position: relative;
+  min-height: 600px;
+}
+
+a.submit-notification {
+  width: 160px;
+  position: relative;
+  z-index: 1;
+}
+
+.btn {
+  font-weight: 300;
+}
+
+.browser-wrapper {
+  padding: 36px 0 0 0;
+  border-radius: 3px;
+  background: #ddd;
+  display: inline-block;
+  position: relative;
+  line-heigth: 0;
+  overflow: hidden;
+}
+
+.browser-container {
+  width: 720px;
+  height: 400px;
+}
+
+.browser-wrapper .browser-navigation-bar {
+  display: block;
+  height: 36px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #F0F0F0;
+  padding: 4px 2px;
+  border-top-right-radius: 4px;
+}
+
+#browser-address-bar {
+  background-color: #FFFFFF;
+}
+
+.browser-wrapper input {
+  clear: both;
+  height: 20px;
+  color: #aaa;
+  width: calc(100% - 28px);
+  border: 0;
+  border-radius: 2px;
+  background-color: #eee;
+  float: left;
+  margin: 3px 0 0 4px;
+  padding: 0 8px 0 8px;
+  display: block;
+}
+
+.notification-container {
+  border-top: 15px solid #00004C;
+  padding: 5%;
+  width: 100%;
+  margin: 0 auto;
+  height: 40px;
+  background-color: rgba(105, 229, 178, 0.75);
+  -webkit-transition: background-color 0.15s linear;
+  -moz-transition: background-color 0.15s linear;
+  -o-transition: background-color 0.15s linear;
+  transition: background-color 0.15s linear;
+}
+
+.notification-container:hover {
+  background-color: rgba(105, 229, 178, 0.95);
+}
+
+.notification-container .tick {
+  float: left;
+  width: 30px;
+  height: 100%;
+}
+
+div.device {
+  display: inline-block;
+}
+
+.heading {
+  position: relative;
+  top: 0;
+  width: 100%;
+  height: 35px;
+  background: rgba(0,0,0,0.7);
+  color: white;
+  text-align: center;
+}
+
+.heading h4 {
+  margin: 0 auto;
+  line-height: 35px;
+  font-weight: 200;
+}
+
+section.content {
+  height: calc(100% - 50px);
+}
+
+header.splash{
+  height: 100%;
+  width: 100%;
+  background: transparent;
+  display: table;
+  text-align: center;
+}
+
+div.splash-inner{
+  overflow:hidden;
+}
+
+h1.page-heading{
+  color: white;
+  border:none;
+  font-weight: 200;
+  font-size: 36px;
+}
+
+.page-subheading {
+  font-weight: 200;
+  line-height: 32px;
+}
+
+div.row {
+  margin: 0 !important;
+}
+
+div.devices {
+  width: 65%;
+  margin: auto;
+  left: 0;
+  right: 0;
+  height: 100%;
+  bottom: 0;
+  position: absolute;
+  max-width: 900px;
+}
+
+div.devices-inner {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+div.devices .device {
+  margin-bottom: -10px;
+}
+
+div#ipad-inner {
+  background-color: #FFFFFF;
+  height: 480px;
+  width: 381px;
+  margin-left: 28px;
+  margin-top: 55px;
+  -moz-box-shadow: inset 0px 0px 5px rgba(54,54,54,0.25);
+  -webkit-box-shadow: inset 0px 0px 5px rgba(54,54,54,0.25);
+  box-shadow: inset 0px 0px 5px rgba(54,54,54,0.25);
+}
+
+div#iphone-inner {
+  margin-left: 14px;
+  width: 231px;
+  background-color: #FFFFFF;
+  margin-top: 63px;
+  height: 397px;
+  -moz-box-shadow: inset 0px 0px 5px rgba(54,54,54,0.45);
+  -webkit-box-shadow: inset 0px 0px 5px rgba(54,54,54,0.45);
+  box-shadow: inset 0px 0px 5px rgba(54,54,54,0.45);
+}
+
+.signup-link {
+  color: #FFFFFF;
+  text-decoration: none;
+  float: right;
+  margin-top: 8px;
+}
+
+.signup-link:hover {
+  color: #EB0752;
+  text-decoration: none;
+}
+
+.navbar-container {
+  padding-top: 10px;
+}
+
+.small-logo, .full-logo {
+  transition: height 0.4s;
+  -webkit-transition: height 0.4s; /* Safari */
+  -moz-transition: height 0.4s;
+  -o-transition: height 0.4s;
+}
+
+.small-logo {
+  height: 0;
+}
+
+.full-logo {
+  height: 37px;
+}
+
+#browser-window, #iphone {
+  position: absolute;
+  bottom: 0;
+}
+
+#browser-window {
+  bottom: -10px;
+}
+
+#iphone {
+  left: 0;
+  bottom: -115px;
+}
+
+.marvel-device.iphone6 {
+  position: relative;
+  width: 335px;
+  height: 610px;
+  z-index: 2;
+  -moz-box-shadow: 5px -2px 15px rgba(54,54,54,0.35);
+  -webkit-box-shadow: 5px -2px 15px rgba(54,54,54,0.35);
+  box-shadow: 5px -2px 15px rgba(54,54,54,0.35);
+}
+
+.marvel-device.iphone6 .screen {
+  box-shadow: 0 0 0 1px #111111;
+  overflow: hidden;
+}
+
+.marvel-device.iphone6 .screen .inner-screen {
+  background-image: url('/images/trello-mobile.png');
+}
+
+#browser-window .inner-screen {
+  background-image: url('/images/trello-browser.png');
+}
+
+.devices .inner-screen {
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+}
+
+.native-notification {
+  height: 70px;
+  width: 100%;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.85);
+  color: #FFFFFF;
+  text-align: left;
+  overflow: hidden;
+  position: relative;
+  visibility: hidden;
+}
+
+.drag-down-bar {
+  margin: auto;
+  width: 30px;
+  height: 4px;
+  background-color: rgba(220, 220, 220, 0.7);
+  border-radius: 10px;
+  position: absolute;
+  bottom: 4px;
+  left: 0;
+  right: 0;
+}
+
+.nat-not-components {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.native-notification .logo {
+  height: 22px;
+  width: 16px;
+  background-image: url('/images/pusher_logo_p.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 7px;
+  left: 8px;
+}
+
+.native-notification .name {
+  display: inline-block;
+  position: absolute;
+  top: 5px;
+  font-weight: 400;
+  left: 30px;
+}
+
+.native-notification .time-ago {
+  margin-left: 8px;
+  display: inline-block;
+  position: absolute;
+  top: 5px;
+  left: 142px;
+  color: #868289;
+}
+
+.native-notification .message {
+  display: inline-block;
+  position: absolute;
+  top: 26px;
+  font-weight: 100;
+  line-height: 1.1;
+  margin-right: 5px;
+  left: 30px;
+  text-align: left;
+  z-index: 1;
+}
+
+#browser-window .notifications {
+  position: absolute;
+  top: 36px;
+  height: 100%;
+  right: 0;
+  width: 236px;
+  text-align: center;
+}
+
+.html5-notification {
+  position: relative;
+  margin: 8px;
+  width: 220px;
+  height: 55px;
+  background-color: #FFFFFF;
+}
+
+.html5-notification .left-box {
+  background-color: #EAEAEA;
+  width: 50px;
+  height: 100%;
+  display: inline-block;
+  float: left;
+}
+
+.html5-notification .message {
+  display: inline-block;
+  float: left;
+  color: #353535;
+  padding: 10px;
+  height: 30px;
+  width: 145px;
+  text-align: left;
+}
+
+.html5-notification .cross {
+  background-color: #676767;
+  border-radius: 50%;
+  height: 14px;
+  width: 14px;
+  display: inline-block;
+  position: relative;
+  float: right;
+  margin: 5px;
+}
+
+.html5-notification .cross .ion-close {
+  font-size: 10px;
+  position: absolute;
+  top: 1px;
+  left: 3px;
+}
+
+#browser-window {
+  right: -20px;
+}
+
+section.mobile.native-notification {
+  height: 0;
+}
+
+.tutorial-link {
+  height: 0;
+  opacity: 0;
+  font-weight: 200;
+  line-height: 32px;
+  font-size: 18px;
+  position: relative;
+  z-index: 1;
+}
+
+.tutorial-link a {
+  border-bottom: 1px solid #FFFFFF;
+  color: white;
+}
+
+.tutorial-link a:hover {
+  border-color: #E8E8E8;
+  color: #E8E8E8;
+}
+
+@media screen and (max-width: 1100px) {
+  div.devices {
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  div.devices {
+    width: 85%;
+  }
+
+  .small-logo {
+    height: 37px;
+  }
+
+  .full-logo {
+    height: 0;
+    width: 0;
+  }
+}
+
+@media screen and (max-width: 848px) {
+  div#browser-window{
+    display:none;
+  }
+
+  div#iphone {
+    bottom: -120px;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+
+  div.devices {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  div#browser-window{
+    display:none;
+  }
+
+  div#iphone {
+    display:none;
+  }
+
+  section.mobile.native-notification {
+    visibility: hidden;
+  }
+
+  a.submit-notification {
+    margin-top: 20px;
+  }
+}
